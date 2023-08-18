@@ -15,9 +15,23 @@ edition = "2021"
 # and it will keep the alphabetic ordering for you.
 
 [dependencies]
+anyhow = "1.0.72"
+aws-config = "0.56.0"
+aws-sdk-s3 = "0.29.0"
+aws-sdk-transcribe = "0.29.0"
+bytes = "1.4.0"
+chrono = "0.4.26"
+hyper = "0.14.27"
+infer = "0.15.0"
 lambda_http = "0.8.1"
 lambda_runtime = "0.8.1"
+reqwest = { version = "0.11.18", features = ["stream"] }
+serde_json = "1.0.104"
+teloxide = { version = "0.12.2"}
 tokio = { version = "1", features = ["macros"] }
+tokio-stream = "0.1.14"
 tracing = { version = "0.1", features = ["log"] }
 tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt"] }
+url = "2.4.0"
+uuid = "1.4.1"
 
